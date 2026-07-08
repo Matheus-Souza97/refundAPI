@@ -4,8 +4,8 @@ import { authConfig } from "../configs/auth";
 import { AppError } from "../utils/AppError";
 
 interface TokenPayload {
-  role: String
-  sub: String
+  role: string
+  sub: string
 }
 
 function ensureAuthenticated(request:Request, response:Response, next:NextFunction){
