@@ -33,7 +33,7 @@ class RefundController {
     return response.status(201).json(refund)
   }
 
-  async show(request:Request, response:Response, next:NextFunction) {
+  async index(request:Request, response:Response, next:NextFunction) {
     const querySchema = z.object({
       name: z.string().optional().default(""),
       page: z.coerce.number().optional().default(1),
@@ -74,6 +74,21 @@ class RefundController {
       const totalPages = Math.ceil(totalRecords / perPage)
 
     return response.status(200).json({refund, pagination: {page, perPage, totalRecords, totalPages: totalPages > 0 ? totalPages : 1}})
+  }
+
+  async show(request:Request, response:Response, next:NextFunction) {
+    const paramsSchema = z.object({
+      id: z.string().uuid()
+    })
+
+    const { id } = paramsSchema.parse(request.params)
+
+    const refund = await prisma.refunds.findFirst({
+      where: { id },
+      include: { user: true}
+    })
+
+    return response.status(200).json(refund)
   }
 }
 

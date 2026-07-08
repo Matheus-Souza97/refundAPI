@@ -6,6 +6,7 @@ const refundRoutes = Router()
 const refundController = new RefundController()
 
 refundRoutes.post("/",verifyUserAuthorization(["employee", "manager"]), refundController.create)
-refundRoutes.get("/", verifyUserAuthorization(["manager"]), refundController.show)
+refundRoutes.get("/", verifyUserAuthorization(["manager"]), refundController.index)
+refundRoutes.get("/:id", verifyUserAuthorization(["employee", "manager"]), refundController.show)
 
 export { refundRoutes }
