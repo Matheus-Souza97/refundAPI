@@ -1,7 +1,7 @@
 # Refund API
 
 <p align="center">
-  <img src="./capa.png" alt="Refund API" width="80%">
+  <img src="./images/capa.png" alt="Refund API" width="80%">
 </p>
 
 <p align="center">
@@ -143,7 +143,7 @@ Abaixo estão alguns exemplos das principais funcionalidades da aplicação.
 Criação de um novo usuário informando nome, e-mail, senha e nível de acesso (**Employee** ou **Manager**).
 
 <p align="center">
-  <img src="./create.png" alt="Cadastro de usuário" width="900">
+  <img src="./images/create.png" alt="Cadastro de usuário" width="900">
 </p>
 
 ---
@@ -153,7 +153,7 @@ Criação de um novo usuário informando nome, e-mail, senha e nível de acesso 
 Autenticação de um usuário utilizando e-mail e senha. Em caso de sucesso, a API retorna um **JWT**, utilizado para acessar as rotas protegidas.
 
 <p align="center">
-  <img src="./login.png" alt="Login da API" width="900">
+  <img src="./images/login.png" alt="Login da API" width="900">
 </p>
 
 ---
@@ -163,7 +163,7 @@ Autenticação de um usuário utilizando e-mail e senha. Em caso de sucesso, a A
 Criação de uma nova solicitação de reembolso contendo descrição, valor, categoria e comprovante da despesa.
 
 <p align="center">
-  <img src="./refund.png" alt="Criação de reembolso" width="900">
+  <img src="./images/refund.png" alt="Criação de reembolso" width="900">
 </p>
 
 ---
@@ -173,7 +173,7 @@ Criação de uma nova solicitação de reembolso contendo descrição, valor, ca
 Consulta de um reembolso específico através do seu identificador.
 
 <p align="center">
-  <img src="./show.png" alt="Buscar reembolso por ID" width="900">
+  <img src="./images/show.png" alt="Buscar reembolso por ID" width="900">
 </p>
 
 ---
@@ -183,7 +183,7 @@ Consulta de um reembolso específico através do seu identificador.
 Exemplo do envio de um arquivo de comprovante utilizando **Multer**.
 
 <p align="center">
-  <img src="./comprovante.png" alt="Upload de comprovante" width="900">
+  <img src="./images/comprovante.png" alt="Upload de comprovante" width="900">
 </p>
 
 ## ⚙️ Instalação
